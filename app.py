@@ -7,28 +7,28 @@ from model_arc import model
 
 app = FastAPI()
 # Define the classes
-classes = ['imli',
+classes = ['Imli',
  'Palak',
  'Elichi',
- 'nam_nam',
- 'mint',
+ 'Nam Nam',
+ 'Mint',
  'Aparajita',
- 'Aavni_pan',
+ 'Aavni Pan',
  'Neem',
  'Tulsi',
- 'kali_mirch',
- 'bael',
- 'Curry Patta',
+ 'Kali Mirch',
+ 'Bale',
+ 'Curry Leaf',
  'Kola Jamun',
- 'AloeVera',
+ 'Aloe Vera',
  'Shewali',
- 'yellow_trumpetbush',
+ 'Yellow Trumpetbush',
  'Lemon',
  'Vitaceae',
- 'chaulmoogra',
- 'bhedeli',
+ 'Chaulmoogra',
+ 'Bhedeli',
  'Putranjiva',
- 'Smallhead_Knotweed']
+ 'Smallhead Knotweed']
 # Load the model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model_path = 'plant-model.pth'
